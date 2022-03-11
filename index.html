@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Haagen-Dazs</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="portfolio of Jeonghun">
+        <meta name="author" content="Jeonghun">
+        <link rel="icon" type="imgage/png" href="./imgs/logo.png">
+         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <!--nav-->
+        <nav class="navbar">
+            <a href="index.html">
+                <img src="./imgs/logo.png" style="width: 160px; height: 75px;">
+            </a>
+            <div class="navbar__menu">
+                <ul class="navbar__item">
+                    <a href="product.html">
+                        <li class="navbar_item__menu">제품소개</li>
+                    </a>
+                    <a href="#">
+                        <li class="navbar_item__menu">레시피
+                        </li>
+                    </a>    
+                    <a href="#">    
+                        <li class="navbar_item__menu">이벤트
+                        </li>
+                    </a>    
+                    <a href="#">    
+                        <li class="navbar_item__menu">공지사항</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+        <!--banner-->
+        <section class="container">
+            <div class="banner fade">
+                <img src="imgs/slide.1.jpg" alt="slide1" style="width: 100%">
+            </div>
+            <div class="banner fade">
+                <img src="imgs/slide.2.jpg" alt="slide1" style="width: 100%">
+            </div>
+            <div class="banner fade">
+                <img src="imgs/slide.3.png" alt="slide1" style="width: 100%">
+            </div>
+            <div class="banner fade">
+                <img src="imgs/slide.4.jpg" alt="slide1" style="width: 100%">
+            </div>
+            <!-- 다음과 이전버튼-->
+            <a class="prev" onclick="plusSlides(-1)">
+                <i class="fa-solid fa-angle-left" style="font-size: 55px;"></i>
+            </a>
+            <a class="next" onclick="plusSlides(+1)">
+                <i class="fa-solid fa-angle-right" style="font-size: 55px;"></i>
+            </a>
+        </section>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        <!--content-->
+        <article>
+            <h1 class="content__h1">추천제품</h1>
+        
+            <div class="content__container">
+                <div class="parallax">
+                    <div class="parallax-top-left"></div>
+                    <div class="parallax-top-right"></div>
+                    <div class="parallax-bottom-left"></div>
+                    <div class="parallax-bottom-right"></div>
+                    <div class="parallax-content">
+                        <div class="parallax-back">
+                            <a href="#">
+                            <img src="./imgs/product1.jpg" class="img-responsive rounded" alt="추천상품1">
+                            </a>    
+                        </div>
+                    </div>
+                </div>
+                <div class="parallax">
+                    <div class="parallax-top-left"></div>
+                    <div class="parallax-top-right"></div>
+                    <div class="parallax-bottom-left"></div>
+                    <div class="parallax-bottom-right"></div>
+                    <div class="parallax-content">
+                        <div class="parallax-back">
+                            <a href="#">
+                            <img src="./imgs/product4.jpg" class="img-responsive rounded" alt="추천상품4">
+                            </a>    
+                        </div>
+                    </div>
+                </div>
+                <div class="parallax">
+                    <div class="parallax-top-left"></div>
+                    <div class="parallax-top-right"></div>
+                    <div class="parallax-bottom-left"></div>
+                    <div class="parallax-bottom-right"></div>
+                    <div class="parallax-content">
+                        <div class="parallax-back">
+                            <a href="#">
+                            <img src="./imgs/product2.png" class="img-responsive rounded" alt="추천상품2">
+                            </a>    
+                        </div>
+                    </div>
+                </div>
+                <div class="parallax">
+                    <div class="parallax-top-left"></div>
+                    <div class="parallax-top-right"></div>
+                    <div class="parallax-bottom-left"></div>
+                    <div class="parallax-bottom-right"></div>
+                    <div class="parallax-content">
+                        <div class="parallax-back">
+                            <a href="#">
+                            <img src="./imgs/product3.png" class="img-responsive rounded" alt="추천상품3">
+                            </a>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <section class="container container__content">
+            <div class="content_bg"></div>
+            <h1 class="content_text">Find<br>Your<br>Flavor</h1>
+            <h2 class="content_text_2">여러분들의 맛을 찾아보세요.</h2>
+            <button class="content__button"><a href="#">더 알아보기</a></button>
+        </section>
+        <article class="notice">
+            <h1 class="content__h1">레시피</h1>
+            <div class="recipy">
+                <div class="card card--1">
+              
+                    <div class="card__img"></div>
+                    <a href="#" class="card_link">
+                        <div class="card__img--hover"></div>
+                    </a>
+                    <div class="card__info">
+                        <span class="card__category"> Recipe</span>
+                        <h3 class="card__title">Crisp Spanish tortilla Matzo brei</h3>
+                    </div>
+                </div>
+                <div class="card card--2">
+              
+                    <div class="card__img"></div>
+                    <a href="#" class="card_link">
+                        <div class="card__img--hover"></div>
+                    </a>
+                    <div class="card__info">
+                        <span class="card__category"> Recipe</span>
+                        <h3 class="card__title">Crisp Spanish tortilla Matzo brei</h3>
+                    </div>
+                </div>
+                <div class="card card--3">
+              
+                    <div class="card__img"></div>
+                    <a href="#" class="card_link">
+                        <div class="card__img--hover"></div>
+                    </a>
+                    <div class="card__info">
+                        <span class="card__category"> Recipe</span>
+                        <h3 class="card__title">Crisp Spanish tortilla Matzo brei</h3>
+                    </div>
+                </div>
+                <div class="card card--4">
+              
+                    <div class="card__img"></div>
+                    <a href="#" class="card_link">
+                        <div class="card__img--hover"></div>
+                    </a>
+                    <div class="card__info">
+                        <span class="card__category"> Recipe</span>
+                        <h3 class="card__title">Crisp Spanish tortilla Matzo brei</h3>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="sns">
+            <h1 class="content__h1">SNS</h1>
+            <div class="sns__line"></div>
+            <div class="sns__item">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook-square"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </article>    
+        
+        <!--footer-->
+        <footer>
+            <div class="bottom__box">
+                <div class="bottom__logo">
+                <img src="./imgs/logo.png" alt="logo">
+                </div>    
+                <div class="bottom__title">한국하겐-다즈(주)대표: 김미조</div>
+                <div class="bottom__detail">주소 : 서울특별시 강남구 테헤란로 311(역삼동,아남타워 6층) | 사업자등록번호 : 106-81-28964 | 통신판매신고 : 강남-8186 | 대표전화 : 02-508-8500 | 개인정보관리책임자 : 김미조대표</div>
+                <div class="bottom__title">하겐다즈 고객만족센터</div>
+                <div class="bottom__call">070-7549-7020</div>
+                <div class="bottom__detail">고객센터 운영시간 : 평일 10:00 ~ 17:00 (점심시간 12:00~13:00)</div>
+                <div class="bottom__detail">개인정보처리방침 | 이용약관 | 이메일무단수집거부</div>
+            </div>
+            <div class="bottom__line"></div>
+            <div class="bottom__copy">copyright@cjswjdgns.All.Rights.Reserved.</div>
+        </footer>
+    </body>
+</html>
