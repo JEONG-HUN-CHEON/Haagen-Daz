@@ -56,3 +56,19 @@ window.addEventListener('scroll', function(){
         mainText.style.animation = 'slide 2s ease-out';
     }
 });
+
+
+
+
+
+
+
+//event page button
+function show(anything){
+    document.querySelector('.textBox').value = anything;
+};
+
+let dropdown = document.querySelector('.dropdown');
+    dropdown.onclick = function(){
+        dropdown.classList.toggle('active');
+    };
