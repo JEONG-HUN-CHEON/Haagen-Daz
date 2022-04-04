@@ -18,7 +18,7 @@
         <!--nav-->
         <nav class="navbar">
             <a href="index.html">
-                <img src="./imgs/logo.png" style="width: 160px; height: 75px;">
+                <img src="./imgs/logo.png">
             </a>
             <div class="navbar__menu">
                 <ul class="navbar__item">
@@ -57,12 +57,13 @@
             <button class="search_img"><i class="fa-solid fa-magnifying-glass"></i></button>    
             </div>    
             <div class="dropdown">
-                <input type="text" class="textBox" placeholder="제목" readonly>
+                <select>
                 <div class="option">
-                    <div onclick="show('제목')">제목</div>
-                    <div onclick="show('Css')">내용</div>
-                    <div onclick="show('Javascript')">제목 + 내용</div>
+                    <option value = "0">제목</option>
+                    <option value = "1">내용</option>
+                    <option value = "2">제목 + 내용</option>
                 </div>
+                </select>    
             </div>
         </section>
         <section class="event__content2">
