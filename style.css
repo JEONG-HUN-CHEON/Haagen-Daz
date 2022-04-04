@@ -81,6 +81,11 @@ nav{
     text-align: center;
     margin-top: 10px;
 }
+
+.navbar img{
+    width: 160px;
+    height: 75px;
+}
 .navbar__menu{
     width: 100%;
     background-color: #600624;
@@ -574,6 +579,10 @@ footer{
     margin: 0 auto;
 }
 
+.fa-angle-left, .fa-angle-right{
+    font-size: 55px;
+}
+
 /*content*/
 
 .product__content{
@@ -853,28 +862,14 @@ footer{
     border: 1px solid #600624;
 }
 
-.dropdown::before{
-    content: '';
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    z-index: 10000;
-    right: 20px;
-    top: 15px;
-    border: 2px solid #333;
-    border-top: 2px solid #fff;
-    border-right: 2px solid #fff;
-    transform: rotate(-45deg);
-    transition: 0.5s;
-    pointer-events: none;
-}
+
 
 .dropdown.active::before{
     top: 25px;
     transform: rotate(-225deg);
 }
 
-.dropdown input{
+.dropdown select{
     position: absolute;
     top: 0;
     left: 0;
@@ -904,7 +899,7 @@ footer{
     display: block;
 }
 
-.dropdown .option div{
+.dropdown .option option{
     padding: 12px 20px;
     cursor: pointer;
 }
@@ -913,11 +908,7 @@ footer{
     color: #fff;
 }
 
-.dropdown .option div ion-icon{
-    position: relative;
-    top: 4px;
-    font-size: 1.2em;
-}
+
 
 .searchbar{
     display: flex;
@@ -1076,6 +1067,168 @@ footer{
     /*notice page*/
     .notice__content1{
         max-width: 700px;
+    }
+}
+
+@media screen and (max-width : 390px){
+    .navbar_item__menu{
+        font-size: 15px;
+    }
+    .navbar img{
+        width: 140px;
+        height: 60px;
+    }
+    
+    .banner img{
+        height: 180px;
+    }
+    .prev, .next{
+        top: 40%;
+    }
+    .fa-angle-right, .fa-angle-left{
+        font-size: 38px;
+    }
+    .next{
+        margin-right: 0px;
+    }
+    .prev{
+        margin-left: 0px;
+    }
+    .dot{
+        width: 10px;
+        height: 10px;
+    }
+    
+    .content__h1{
+        font-size: 25px;
+    }
+    .content__container{
+        max-width: 320px;
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+    .parallax{
+        margin-top: 10px;
+    }
+    
+    .content_bg{
+        height: 440px;
+    }
+    .content_text{
+        top: 40%;
+        font-size: 45px;
+    }
+    .content_text_2{
+        top: 56%;
+        left: 12%;
+        font-size: 20px;
+    }
+    .content__button{
+        width: 90px;
+        height: 40px;
+        font-size: 14px;
+        top: 68%;
+        left: 28%;
+    }
+    .card{
+        width: 288px;
+        margin-top: 20px;
+        margin-right: 0px;
+    }
+    .recipy{
+        margin-top: 16px;
+    }
+    .sns{
+        margin-top: 40px;
+    }
+    .sns__item{
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .sns__item i{
+        font-size: 35px;
+    }
+    .bottom__title{
+        font-size: 16px;
+    }
+    .bottom__detail{
+        font-size: 13px;
+    }
+    .bottom__copy{
+        font-size: 14px;
+    }
+    .bottom__logo img{
+        width: 140px;
+    }
+    .bottom__line{
+        margin-top: 5px;
+    }
+    /*product page*/
+    .product__content{
+        max-width: 320px;
+        margin: 20px auto;
+    }
+    .position{
+        font-size: 11px;
+    }
+    .product__content2{
+        max-width: 320px;
+    }
+    .product__menu{
+        width: 160px;
+        height: 160px;
+    }
+    /*recipy page*/
+    .recipe__content2{
+        max-width: 320px;
+    }
+    .recipe__menu{
+        width: 160px;
+        height: auto;
+    }
+    /*event page*/
+    .event__content1{
+        max-width: 320px;
+    }
+    .event__content2{
+        max-width: 320px;
+    }
+    .event__detail{
+        height: 88px;
+    }
+    .event__text{
+        height: 29px;
+    }
+    .event__img__box{
+        width: 300px;
+        height: 118px;
+    }
+    .event__text__title{
+        font-size: 18px;
+    }
+    .event__text__content{
+        font-size: 10px;
+    }
+    .event__img{
+        height: 50px;
+    }
+    /*notice page*/
+    
+    .notice__content1{
+        max-width: 320px;
+    }
+    .notice__table{
+        margin-top: 0;
+    }
+    .th_size{
+        font-size: 11px;
+    }
+    .notice__table td{
+        font-size: 10px;
+    }
+    .notice__table th, td{
+        padding: 9px;
     }
 }
 
